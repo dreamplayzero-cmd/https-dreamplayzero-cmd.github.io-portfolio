@@ -3,89 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Allen Shin | Portfolio</title>
+  <title>Allen Shin | AI · Web · App Portfolio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 
   <style>
     body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #ffffff;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .container {
-      max-width: 900px;
-      padding: 40px;
-      background: rgba(0, 0, 0, 0.4);
-      border-radius: 16px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      font-weight: 400;
-      color: #9fd3ff;
-      margin-bottom: 30px;
-    }
-
-    p {
-      line-height: 1.8;
-      font-size: 1.05rem;
-      margin-bottom: 20px;
-    }
-
-    .tags span {
-      display: inline-block;
-      background: rgba(255,255,255,0.15);
-      padding: 6px 12px;
-      border-radius: 20px;
-      margin: 4px;
-      font-size: 0.9rem;
-    }
-
-    footer {
-      margin-top: 40px;
-      font-size: 0.9rem;
-      opacity: 0.7;
-      text-align: center;
+      font-family: 'Inter', 'Noto Sans KR', sans-serif;
     }
   </style>
 </head>
 
-<body>
-  <div class="container">
-    <h1>Allen Shin</h1>
-    <h2>AI · Web · App Project Portfolio</h2>
+<body class="bg-slate-900 text-slate-100 min-h-screen">
 
-    <p>
-      안녕하세요.  
-      AI 기반 앱 기획과 웹 프로젝트를 공부하며 실제 서비스 구현까지 경험하고 있는 개발 학습자입니다.
+  <!-- Hero -->
+  <section class="max-w-4xl mx-auto px-6 py-20">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Allen Shin</h1>
+    <p class="text-xl text-sky-400 mb-6">
+      AI · Web · App Project Portfolio
     </p>
 
-    <p>
-      이 포트폴리오는 GitHub Pages를 통해 배포되었으며,  
-      프로젝트 기반 학습 결과물을 정리하기 위한 공간입니다.
+    <p class="leading-relaxed text-slate-300 mb-8">
+      안녕하세요. AI 기반 앱 기획과 웹 프로젝트를 공부하며  
+      실제 서비스 구현까지 경험하고 있는 개발 학습자입니다.
+      <br /><br />
+      이 페이지는 Google AI Studio에서 생성한 이력서 결과물을  
+      GitHub Pages를 통해 웹으로 배포한 개인 포트폴리오입니다.
     </p>
 
-    <div class="tags">
-      <span>#AI</span>
-      <span>#Web</span>
-      <span>#App</span>
-      <span>#Portfolio</span>
-      <span>#GitHubPages</span>
+    <!-- Tags -->
+    <div class="flex flex-wrap gap-2">
+      <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">#AI</span>
+      <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">#Web</span>
+      <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">#App</span>
+      <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">#Portfolio</span>
+      <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">#GitHubPages</span>
     </div>
+  </section>
 
-    <footer>
-      © 2026 Allen Shin · Built with GitHub Pages
-    </footer>
-  </div>
+  <!-- Projects -->
+  <section class="max-w-4xl mx-auto px-6 py-12 border-t border-slate-700">
+    <h2 class="text-2xl font-semibold mb-6">Projects</h2>
+
+    <div class="space-y-4">
+      <div class="p-5 bg-slate-800 rounded-lg">
+        <h3 class="font-semibold text-lg">AI 기반 개인 이력서 웹</h3>
+        <p class="text-slate-400 text-sm mt-2">
+          Google AI Studio로 생성한 이력서를  
+          GitHub Pages로 배포한 정적 웹 프로젝트
+        </p>
+      </div>
+
+      <div class="p-5 bg-slate-800 rounded-lg">
+        <h3 class="font-semibold text-lg">웹 · 앱 기획 실습 프로젝트</h3>
+        <p class="text-slate-400 text-sm mt-2">
+          학원 실습 기반 UI/UX 기획 및 프론트엔드 연습 프로젝트
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-slate-500 text-sm py-10 border-t border-slate-800">
+    © 2026 Allen Shin · Built with GitHub Pages
+  </footer>
+
 </body>
 </html>
+
+<a
+  href="https://aistudio.google.com/apps/drive/1JoIrdgV-NV_YDe6oveVCBlnsGbHobX6A"
+  target="_blank"
+  class="inline-block mt-6 px-6 py-3 bg-sky-500 text-white rounded-lg hover:bg-sky-600 transition"
+>
+  🤖 Google AI Studio 이력서 보기
+</a>
